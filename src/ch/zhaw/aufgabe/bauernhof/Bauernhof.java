@@ -1,19 +1,34 @@
 package ch.zhaw.aufgabe.bauernhof;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 public abstract class Bauernhof {
 
 	//	HashSet <Tier>stall = new HashSet<Tier>();
 	private Set<Tier> stall = new HashSet<Tier>();
-	//	private List<Kuh> kuhstall = new ArrayList<Kuh>();
+	private List<Kuh> kuhstall = new ArrayList<Kuh>();
 
 	public static void main(String[] args) {
 
 	}
 
+	
+	/*
+	 * Methode um die Namen und Gewichte der Kühe im Kuhstall auf der Konsole ausgeben zu können (Loop über Kuhstall).
+	 */
+	public void gibGewichtKuh() {
+			    Collections.sort(kuhstall);
+			    for (Kuh k : kuhstall) {
+			      System.out.println(k.getName() + " "
+			          + k.getGewicht());
+			    }
+			  
+	}
 
 	/*
 	 * 
