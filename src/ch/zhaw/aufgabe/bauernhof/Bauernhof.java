@@ -20,7 +20,7 @@ public abstract class Bauernhof {
 
 
 	/*
-	 * Methode um die Namen und Gewichte der Kühe im Kuhstall auf der Konsole ausgeben zu können (Loop über Kuhstall).
+	 * Methode um die Namen und Gewichte der Kï¿½he im Kuhstall auf der Konsole ausgeben zu kï¿½nnen (Loop ï¿½ber Kuhstall).
 	 */
 	public void gibGewichtKuh() {
 		Collections.sort(kuhstall);
@@ -60,7 +60,6 @@ befindet, aufgerufen (Loop Ã¼ber das Set).
 			// Next gibt das aktuelle HashSet-Objekt zurÃ¼ck 
 			// und geht zum nÃ¤chsten Ã¼ber
 			String setText = (String) it.next();
-			// Ausgabe des jeweiligen HashSet-Elementes
 			System.out.println(setText);
 		}
 	}
