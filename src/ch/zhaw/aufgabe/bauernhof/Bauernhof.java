@@ -1,11 +1,11 @@
 package ch.zhaw.aufgabe.bauernhof;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
-import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 public abstract class Bauernhof {
 
@@ -17,17 +17,17 @@ public abstract class Bauernhof {
 
 	}
 
-	
+
 	/*
 	 * Methode um die Namen und Gewichte der K�he im Kuhstall auf der Konsole ausgeben zu k�nnen (Loop �ber Kuhstall).
 	 */
 	public void gibGewichtKuh() {
-			    Collections.sort(kuhstall);
-			    for (Kuh k : kuhstall) {
-			      System.out.println(k.getName() + " "
-			          + k.getGewicht());
-			    }
-			  
+		Collections.sort(kuhstall);
+		for (Kuh k : kuhstall) {
+			System.out.println(k.getName() + " "
+					+ k.getGewicht());
+		}
+
 	}
 
 	/*
@@ -39,29 +39,29 @@ public abstract class Bauernhof {
 	}
 
 
-		/*
-		 * Der Bauernhof hat eine Methode lautgeben. In dieser Methode wird die gibLaut-Methode jedes Tieres, welches sich im Stall
+	/*
+	 * Der Bauernhof hat eine Methode lautgeben. In dieser Methode wird die gibLaut-Methode jedes Tieres, welches sich im Stall
 befindet, aufgerufen (Loop über das Set).
-		 */
+	 */
 	public void gibLaut(){
 		for (Tier tier : stall) {
 			tier.gibLaut();
 		}
 	}
-	
-	
+
+
 	public void testgibLaut(){	
-	// Iterator wird angefordert
-	Iterator it = stall.iterator();
-	// HashSet wird mit dem Iterator durchlaufen
-	while (it.hasNext())
-	{
-	        // Next gibt das aktuelle HashSet-Objekt zurück 
-	        // und geht zum nächsten über
-	        String setText = (String) it.next();
-	        // Ausgabe des jeweiligen HashSet-Elementes
-	        System.out.println(setText);
-	}
+		// Iterator wird angefordert
+		Iterator it = stall.iterator();
+		// HashSet wird mit dem Iterator durchlaufen
+		while (it.hasNext())
+		{
+			// Next gibt das aktuelle HashSet-Objekt zurück 
+			// und geht zum nächsten über
+			String setText = (String) it.next();
+			// Ausgabe des jeweiligen HashSet-Elementes
+			System.out.println(setText);
+		}
 	}
 
 
