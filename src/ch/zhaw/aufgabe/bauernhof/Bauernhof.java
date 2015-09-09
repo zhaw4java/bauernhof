@@ -7,43 +7,33 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import ch.zhaw.aufgabe.bauernhof.KuhComparator.KuhSort;
 
-public abstract class Bauernhof {
+
+public class Bauernhof {
 
 	//	HashSet <Tier>stall = new HashSet<Tier>();
 	private Set<Tier> stall = new HashSet<Tier>();
 	private List<Kuh> kuhstall = new ArrayList<Kuh>();
 
-	public static void main(String[] args) {
 
-	}
-
-
-	/*
-	 * Methode um die Namen und Gewichte der K�he im Kuhstall auf der Konsole ausgeben zu k�nnen (Loop �ber Kuhstall).
-	 */
-	public void gibGewichtKuh() {
-		Collections.sort(kuhstall);
+	public void kuhAusgeben() {
+		Collections.sort(kuhstall, new KuhComparator(KuhSort.NAME));
 		for (Kuh k : kuhstall) {
 			System.out.println(k.getName() + " "
 					+ k.getGewicht());
 		}
-
 	}
 
-	/*
-	 * 
-	 * Der Bauernhof hat eine Methode addTier. Damit wird dem Set ein Tier-Objekt hinzugefügt.
-	 */
 	public void addTier(Tier tier){
 		stall.add(tier);
 	}
+	
+	public void addKuh(Kuh kuh){
+		kuhstall.add(kuh);
+	}
 
 
-	/*
-	 * Der Bauernhof hat eine Methode lautgeben. In dieser Methode wird die gibLaut-Methode jedes Tieres, welches sich im Stall
-befindet, aufgerufen (Loop über das Set).
-	 */
 	public void gibLaut(){
 		for (Tier tier : stall) {
 			tier.gibLaut();
