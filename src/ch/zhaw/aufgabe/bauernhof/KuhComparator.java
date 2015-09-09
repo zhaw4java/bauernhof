@@ -2,6 +2,7 @@ package ch.zhaw.aufgabe.bauernhof;
 
 import java.util.Comparator;
 
+
 public class KuhComparator implements Comparator<Kuh> {
 
   private KuhSort sort;

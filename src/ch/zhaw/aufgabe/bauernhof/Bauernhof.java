@@ -54,6 +54,14 @@ public class Bauernhof {
 		}
 	}
 
+	public Set<Tier> getStall() {
+		return stall;
+	}
+
+	public List<Kuh> getKuhstall(Kuh k1) {
+		return kuhstall;
+	}
+
 
 
 }

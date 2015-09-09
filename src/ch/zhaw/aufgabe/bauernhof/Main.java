@@ -11,6 +11,8 @@ public class Main {
 		    
 		    Bauernhof b = new Bauernhof();
 		    
+		    b.addKuh(new Kuh("Zora", 600));
+		    b.addKuh(new Kuh("zora", 600));
 		    b.addKuh(new Kuh("Elsa", 700));
 		    b.addKuh(new Kuh("Lisa", 650));
 		    b.addKuh(new Kuh("Anneliese", 800));

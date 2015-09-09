@@ -10,7 +10,7 @@ import ch.zhaw.aufgabe.bauernhof.Katze;
 import ch.zhaw.aufgabe.bauernhof.Kuh;
 import ch.zhaw.aufgabe.bauernhof.Tier;
 
-public class BauernhofTest {
+public class KuhTest {
 	
 	private Bauernhof b;
 	private Kuh k1;
