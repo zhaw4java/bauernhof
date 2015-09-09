@@ -1,7 +1,7 @@
 package ch.zhaw.aufgabe.bauernhof;
 
 	
-public class Kuh implements Tier {
+public class Kuh implements Tier, Comparable<Kuh> {
 
 	private int gewicht;
 	private String name;
@@ -10,6 +10,12 @@ public class Kuh implements Tier {
 		this.gewicht = gewicht;
 		this.name =  name;
 	}
+	
+	 @Override
+	  public int compareTo(Kuh o) {
+//	    return this.getName().compareTo(o.getName());
+	    return this.getGewicht() - o.getGewicht();
+	  }
 	
 	@Override
 	public void gibLaut() {
