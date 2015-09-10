@@ -11,6 +11,7 @@ public class Kuh implements Tier {
 		this.name =  name;
 	}
 	
+	
 //	 @Override
 //	  public int compareTo(Kuh o) {
 ////	    return this.getName().compareTo(o.getName());

@@ -14,13 +14,6 @@ public class KuhComparator implements Comparator<Kuh> {
   @Override
   public int compare(Kuh o1, Kuh o2) {
     
-//    if (sort == KuhSort.NAME) {
-//      return o1.getName().compareTo(o2.getName());
-//    } else if (sort == KuhSort.GEWICHT) {
-//      return o1.getGewicht() - o2.getGewicht();
-//    }
-//    return o1.getGewicht() - o2.getGewicht();
-
     switch(sort) {
       case GEWICHT: return o1.getGewicht() - o2.getGewicht();
       case NAME: return o1.getName().compareTo(o2.getName());

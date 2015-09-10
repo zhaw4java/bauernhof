@@ -20,15 +20,15 @@ public class Bauernhof {
 	public void kuhAusgeben() {
 		Collections.sort(kuhstall, new KuhComparator(KuhSort.NAME));
 		for (Kuh k : kuhstall) {
-			System.out.println(k.getName() + " "
-					+ k.getGewicht());
+			System.out.println(k.getName() + " " + k.getGewicht());
 		}
+		
 	}
 
 	public void addTier(Tier tier){
 		stall.add(tier);
 	}
-	
+
 	public void addKuh(Kuh kuh){
 		kuhstall.add(kuh);
 	}

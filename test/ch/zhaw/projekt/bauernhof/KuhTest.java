@@ -40,7 +40,7 @@ public class KuhTest {
 	public void testKuh() {
 		setup();
 		 b.addKuh(k1);
-		assertTrue("Book", b.getName(k1));
+		assertTrue("Else", b.getName(k1));
 	}
 
 
