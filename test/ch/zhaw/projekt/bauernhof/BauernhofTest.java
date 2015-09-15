@@ -39,8 +39,8 @@ public class BauernhofTest {
 	@Test
 	public void testKuh() {
 		setup();
-		 b.addKuh(k1);
-		assertTrue("Book", b.getName(k1));
+		assertEquals("Book", b.kuhAusgeben());
+		assertEquals(300, b.kuhAusgeben());
 	}
 
 

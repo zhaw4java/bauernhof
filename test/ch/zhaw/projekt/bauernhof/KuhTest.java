@@ -12,7 +12,7 @@ import ch.zhaw.aufgabe.bauernhof.Tier;
 
 public class KuhTest {
 	
-	private Bauernhof b;
+	//private Bauernhof b;
 	private Kuh k1;
 	private Kuh k2;
 	private Kuh k3;
@@ -24,23 +24,15 @@ public class KuhTest {
 	    k2 = new Kuh("Zora", 600);
 	    k3 = new Kuh("zora", 600);
 	    k4 = new Kuh("Lisa", 650);
-	    Bauernhof b = new Bauernhof();
 
 	}
 	
-	private void addItems() {
-		 b.addKuh(k1);
-		 b.addKuh(k2);
-		 b.addKuh(k3);
-		 b.addKuh(k4);
-
-	}
 
 	@Test
 	public void testKuh() {
 		setup();
-		 b.addKuh(k1);
-		assertTrue("Else", b.getName(k1));
+		assertEquals("Else", k1.getName());
+		assertEquals(300, k1.getGewicht());
 	}
 
 
